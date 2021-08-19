@@ -9,24 +9,6 @@ const img_urls = [
     { image: './images/waterfall.jpg', title: 'waterfall' }
 ];
 
-// img_urls.map((url, i) => {
-//     const h1 = document.createElement('h1');
-//     const img = document.createElement('img');
-//     div = document.createElement('div');
-//
-//     h1.innerHTML = url.title;
-//     img.src = url.image;
-//     img.alt = url.title;
-//
-//     div.classList.add('image-' + (i + 1));
-//     div.classList.add('img');
-//
-//     container.appendChild(div);
-//     div.appendChild(h1);
-//     div.appendChild(img);
-// });
-
-
 let i = 0;
 
 btn.addEventListener('click', () => {
@@ -34,6 +16,7 @@ btn.addEventListener('click', () => {
 
     if (i < 0) i = 2;
 
+    addElement();
 });
 
 btn1.addEventListener('click', () => {
@@ -41,6 +24,10 @@ btn1.addEventListener('click', () => {
 
     if (img_urls[i] === undefined) i = 0;
 
+    addElement();
+});
+
+const addElement = () => {
     const h1 = document.createElement('h1');
     const img = document.createElement('img');
     div = document.createElement('div');
@@ -55,4 +42,4 @@ btn1.addEventListener('click', () => {
     const previous = div.previousSibling;
 
     previous.remove();
-});
+}
