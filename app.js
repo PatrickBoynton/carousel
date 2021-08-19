@@ -52,4 +52,7 @@ btn1.addEventListener('click', () => {
     container.appendChild(div);
     div.appendChild(h1);
     div.appendChild(img);
+    const previous = div.previousSibling;
+
+    previous.remove();
 });
