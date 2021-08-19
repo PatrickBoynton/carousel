@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 10px;
+}
+
+h1 {
+    position: relative;
+    font-size: 3rem;
+    top: 50%;
+    left: 20%;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+}
+
+img {
+    height: 30rem;
+    border-radius: 6px;
+}
+
+.btn {
+    position: relative;
+    border: 3px solid #242424;
+    height: 50%;
+    width: 50%;
+    color: #242424;
+    padding: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    top: 20rem;
+}
+
+.btn-l {
+
+}
+
+.btn:hover {
+    background-color: #6a6a6a;
+    color: white;
+}
